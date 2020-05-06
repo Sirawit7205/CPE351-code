@@ -1,0 +1,34 @@
+Compile Log: 
+cmd: timeout 50 mpirun -f mpi_host -n 16 ./60070501054 heatMatrixTest.txt 60070501054_out 2000
+time: 12.25056069297716
+stdout: All Usage Time   : 11.850122
+
+Output is correct
+---------------------------------
+
+cmd: timeout 75 mpirun -f mpi_host -n 8 ./60070501054 heatMatrixTest.txt 60070501054_out 2000
+time: 16.80519645800814
+stdout: All Usage Time   : 16.494694
+
+Output is correct
+---------------------------------
+
+cmd: timeout 100 mpirun -f mpi_host -n 4 ./60070501054 heatMatrixTest.txt 60070501054_out 2000
+time: 27.802006040001288
+stdout: All Usage Time   : 27.533346
+
+Output is correct
+---------------------------------
+
+cmd: timeout 150 mpirun -f mpi_host -n 2 ./60070501054 heatMatrixTest.txt 60070501054_out 2000
+time: 49.42415938503109
+stdout: All Usage Time   : 49.113779
+
+Output is correct
+---------------------------------
+
+cmd: timeout 200 mpirun -f mpi_host -n 1 ./60070501054 heatMatrixTest.txt 60070501054_out 2000
+time: 94.73992620001081
+stdout: All Usage Time   : 94.724666
+
+Output is correct
